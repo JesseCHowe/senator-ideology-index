@@ -1,0 +1,186 @@
+a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+button {
+  background: #fff;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  margin-bottom: 0.2rem;
+  outline: none;
+  padding: 0.25rem;
+}
+button:focus {
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+header {
+  color: #333;
+  font-weight: 200;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 1rem;
+}
+header p {
+  font-family: Georgia;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5rem;
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+text {
+  fill: #333;
+}
+
+.aboutMe {
+  padding: 10px;
+  text-align: center;
+}
+
+.active {
+  background: #333;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  height: 1300px;
+  shape-rendering: crispEdges;
+  stroke: #333;
+}
+.axis text {
+  font: 10px "Roboto", sans-serif;
+}
+
+.cells path {
+  fill: none;
+  pointer-events: all;
+}
+
+.conservative {
+  fill: #a65355;
+}
+.conservative p {
+  color: #a65355;
+}
+
+.dashed {
+  stroke-dasharray: 5, 5;
+}
+
+.hiveChart_container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.liberal {
+  fill: #5989a2;
+}
+.liberal p {
+  color: #5989a2;
+}
+
+.marker {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.name {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.search-features {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin: 10px auto;
+  max-width: 600px;
+}
+
+.source {
+  margin-top: 0.75rem;
+  text-align: right;
+}
+
+.tooltip {
+  background: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 0.75rem;
+  line-height: 1.3em;
+  width: 120px;
+  padding: 7px 9px;
+  position: absolute;
+  text-align: left;
+  z-index: 9999;
+}
+.tooltip p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.value {
+  margin-top: 0.15rem;
+}
+
+#ideology-chart {
+  padding: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    text-align: left;
+  }
+
+  .search-features {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+  }
+
+  .tooltip {
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+  }
+
+  .tooltip-inner {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tooltip-inner p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
