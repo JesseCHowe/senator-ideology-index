@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Project: Senators Hive Chart FINAL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="ideology-chart">
+  <header>
+    <div class="aboutMe">
+      <a href="https://jessechowe.github.io/">Jesse Howe</a>
+    </div>
+    <h1>115th Congress Ideology Index</h1>
+    <p>Voteview allows users to view every congressional roll call vote in American history on a map of the United States and on a liberal-conservative ideological map including information about the ideological positions of voting Senators and Representatives. The original Voteview of DOS was developed by Keith T. Poole and Howard Rosenthal at Carnegie-Mellon University between 1989 and 1992. Poole and Rosenthal developed Voteview for Windows in 1993 at Princeton University and that work was continued by Boris Shor.</p>
+    <p class="source">source: <a href="https://voteview.com/congress/senate/115/text">voteview.com</a></p>
+  </header>
+  <div class="search-features">
+    <div>
+      <button class="btn active all" onclick="filterParty('All')">All</button>
+      <button class="btn" onclick="filterParty('Democrat')">Democrat</button>
+      <button class="btn" onclick="filterParty('Independent')">Independent</button>
+      <button class="btn" onclick="filterParty('Republican')">Republican</button>
+    </div>
+    <input id="senatorSearch" oninput="filterSenator()" type="text" placeholder="Search..">
+  </div>
+  <div class="hiveChart_container"></div>
+</div>
+<!-- partial -->
+  <script src='https://d3js.org/d3.v4.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
